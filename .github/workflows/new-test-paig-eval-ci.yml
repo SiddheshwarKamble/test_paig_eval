@@ -1,6 +1,9 @@
 name: new-paig-evaluation-ci
 
 on:
+  push:
+    branches:
+      - test-paig-eval
   workflow_dispatch: # Allows manual trigger
 
 permissions:
