@@ -2,9 +2,14 @@ name: new-paig-evaluation-ci
 
 on:
   push:
-    branches:
-      - test-paig-eval
-  workflow_dispatch: # Allows manual trigger
+    branches: [ "test-paig-eval" ]
+    paths:
+      - 'paig-evaluation/**'
+  pull_request:
+    branches: [ "test-paig-eval" ]
+    paths:
+      - 'paig-evaluation/**'
+
 
 permissions:
   contents: read
