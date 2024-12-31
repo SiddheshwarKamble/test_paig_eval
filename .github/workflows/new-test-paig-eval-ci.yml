@@ -1,4 +1,4 @@
-name: paig-evaluation-ci
+name: new-paig-evaluation-ci
 
 on:
   workflow_dispatch: # Allows manual trigger
